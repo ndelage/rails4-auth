@@ -6,7 +6,7 @@
 <% if current_user %>
   <p>You're already logged in!</p>
 <% else %>
-  <%= form_tag login_path do %>
+  <%= form_tag login_path, :id => "login" do %>
     <%= label_tag "Email", :email %>
     <%= text_field_tag :email %>
 
