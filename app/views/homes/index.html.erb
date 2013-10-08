@@ -1,0 +1,7 @@
+Welcome Home!
+
+<%= link_to "Logout", logout_path, :method => "delete" %>
+
+<%= form_tag logout_path, :method => "delete" do %>
+  <%= submit_tag "Logout" %>
+<% end %>
